@@ -1,0 +1,33 @@
+.algunostemas .titulo{
+font-size: 48px;
+margin: 6.5vh 20vw 10vw 35vh;
+}
+.algunostemas div{
+    padding:0vh 10vw 10vh 10vw;
+}
+.algunostemas p{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #060A24;
+}
+.icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+}   
+.icons > div{
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+    padding: 1em;  
+}
+
+@media screen and (max-width:768px){
+    .icons{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        text-align: center;
+}}

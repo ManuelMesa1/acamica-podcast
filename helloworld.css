@@ -1,0 +1,45 @@
+/* CLASS HELLO WORLD STYLES */
+.helloworld div .titulo{
+    font-size: 64px;
+    padding-left: 10vw;
+    margin-right: auto;
+}
+.helloworld .parrafo{
+    margin: 0vh 47vw 0vh 10vw;
+    font-size: 14px;
+}
+.button{
+    width: 288px;
+    height: 48px;
+    opacity: 100%;
+    background-color: #00F3BB;
+    font-weight: bold;
+    border: none;
+    margin: 8vh 10vw 0vh 10vw;
+    font-family: 'IBM Plex Mono';
+    transition: 0.7s;
+}
+
+.button:hover{
+    background: rgb(0,240,184);
+    background: linear-gradient(90deg, rgba(0,240,184,1) 0%, rgba(0,0,254,1) 100%);
+    color: #FFFFFF;
+}
+
+.hello-dot{
+    color: #0000EC;
+}
+
+@media screen and (max-width:768px){
+    .hello-dot{
+        color: black;
+    }
+    .helloworld div .titulo{
+        font-size: 48px;
+    }
+    .helloworld .parrafo{
+        margin: 0vh 47vw 0vh 10vw;
+        font-size: 12px;
+    }
+}
+

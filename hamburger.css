@@ -1,0 +1,75 @@
+/* DESKTOP */
+/* Wrapper */
+#page-nav {
+  background: white;
+  font-family: 'IBM Plex Mono', monospace;
+    display: flex;
+    float: right;
+    margin: 2vh 10vw 2vh 2vw;
+}
+
+/* Hide Hamburger */
+#page-nav label, #hamburger {
+  display: none;
+}
+
+/* Menu Items */
+#page-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+}
+#page-nav ul li {
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#page-nav ul li a {
+  margin-right: 2.5vw;
+  margin-top: 2vh;
+  color: #060A24;
+  text-decoration: none;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+#page-nav a:hover {
+  color: #00F3BB;
+  text-decoration: line-through;
+  transition: 0.5s;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px){
+  /* Show Hamburger */
+  #page-nav label {
+    display: inline-block;
+    color: #060A24;
+    background: white;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  /* Break down menu items into vertical */
+  #page-nav ul li {
+    display: block;
+  }
+  #page-nav ul li {
+    border-top: 1px solid #333;
+  }
+
+  /* Toggle show/hide menu on checkbox click */
+  #page-nav ul {
+    display: none;
+  }
+
+  #page-nav input:checked ~ ul {
+    display: block;
+    list-style: none;
+    background-color: #0000EC;
+  }
+  
+  #page-nav input:checked ~ ul li a{
+    color: #FFFFFF;
+  }
+}
